@@ -10,6 +10,5 @@ plot(DatesTable$timestamp, DatesTable$Voltage, type= "l", xlab = "datetime", yla
 plot(DatesTable$timestamp, DatesTable$Sub_metering_1, type = "l", ylab = "Energy Submetering", xlab = " ")
 lines(DatesTable$timestamp, DatesTable$Sub_metering_2, col = "red")
 lines(DatesTable$timestamp, DatesTable$Sub_metering_3, col = "blue")
-legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty = 1, col = c("black","red","blue"), bty = "n")
 plot(DatesTable$timestamp, DatesTable$Global_reactive_power, type= "l", xlab = "datetime", ylab= "Global_reactive_power")
 dev.off() #close the png file
